@@ -4,55 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/starnight"
+    android:background="@mipmap/ic_launcher_foreground"
     tools:context=".ActivityTwo">
 
     <EditText
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="69dp"
         android:hint="Enter Your Weight in KG"
+        android:inputType="numberDecimal"
         android:textColorHint="#ffffff"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:ems="10"
         android:hint="Enter Your Height in M"
         android:inputType="numberDecimal"
         android:textColorHint="#ffffff"
-        tools:layout_editor_absoluteX="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="180dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
         android:text="Calculate"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="279dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+         />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/newtext1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
         android:text="Your BMI"
         android:textColor="#ffffff"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="378dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+         />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/newtext2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#ffffff"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Your Result"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="437dp" />
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newtext1"
+        app:layout_constraintVertical_bias="0.39"
+         />
 </android.support.constraint.ConstraintLayout>

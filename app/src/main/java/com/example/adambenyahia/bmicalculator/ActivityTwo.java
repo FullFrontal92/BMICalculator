@@ -2,6 +2,7 @@ package com.example.adambenyahia.bmicalculator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -14,7 +15,7 @@ public class ActivityTwo extends AppCompatActivity {
         setContentView(R.layout.activity_two);
     }
 
-    public void calcbmi (){
+    public void calcbmi (View view){
 
         double height=0;
         double weight=0;
@@ -26,8 +27,8 @@ public class ActivityTwo extends AppCompatActivity {
 
         Button b1 = (Button) findViewById(R.id.button2);
 
-        TextView t1= (TextView) findViewById(R.id.textView1);
-        TextView t2= (TextView) findViewById(R.id.textView2);
+        TextView t1= (TextView) findViewById(R.id.newtext1);
+        TextView t2= (TextView) findViewById(R.id.newtext2);
 
         weight= Double.parseDouble(et1.getText().toString());
         height= Double.parseDouble(et2.getText().toString());
@@ -46,6 +47,7 @@ public class ActivityTwo extends AppCompatActivity {
             msg="Normal";
         }
         else if (bmi>25){
+
             msg="overweight";
         }
 
